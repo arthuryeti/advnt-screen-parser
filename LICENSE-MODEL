@@ -1,0 +1,15 @@
+Model Weights License Notice (GNU AGPL-3.0)
+
+The Advnt v3 UI icon detector weights (`icons.onnx` and `best.pt`) were
+fine-tuned from Ultralytics YOLOv11s (`yolo11s.pt`), which is licensed under
+the GNU Affero General Public License v3.0 (AGPL-3.0):
+
+  https://www.gnu.org/licenses/agpl-3.0.en.html
+  https://github.com/ultralytics/ultralytics/blob/main/LICENSE
+
+Accordingly, the model weights (`icons.onnx` and `best.pt`) are released under
+the GNU AGPL-3.0 license.
+
+The surrounding Python inference wrapper, UI-tree parser, CLI, FastAPI server,
+and visualization utilities in this repository contain no Ultralytics code and
+are licensed separately under the MIT License (see `LICENSE`).

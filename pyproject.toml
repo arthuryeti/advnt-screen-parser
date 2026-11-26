@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "advnt-screen-parser"
+version = "3.0.0"
+description = "CPU-fast iOS screen parser combining a 47-class YOLOv11s ONNX UI icon detector (~30ms CPU) with RapidOCR and a geometric UI element tree."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT (code) / AGPL-3.0 (v3 YOLOv11s model weights)" }
+authors = [{ name = "Arthur Yeti" }]
+keywords = [
+    "ios",
+    "ocr",
+    "ui-detection",
+    "icon-detection",
+    "yolov11",
+    "onnx",
+    "mobile-agent",
+    "screen-parser",
+    "rapidocr",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+dependencies = [
+    "numpy>=1.24.0,<3.0.0",
+    "onnxruntime>=1.18.0",
+    "opencv-python-headless>=4.9.0",
+    "huggingface-hub>=0.24.0",
+]
+
+[project.optional-dependencies]
+ocr = [
+    "rapidocr>=3.4.0",
+    "Pillow>=10.0.0",
+    "PyYAML>=6.0",
+    "pyclipper>=1.2.0",
+    "Shapely>=2.0.0,!=2.0.4",
+    "omegaconf>=2.3.0",
+    "requests>=2.31.0",
+    "tqdm>=4.66.0",
+    "colorlog>=6.8.0",
+    "six>=1.15.0",
+]
+server = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+]
+all = [
+    "advnt-screen-parser[ocr,server]",
+]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+advnt-parse = "advnt_screen_parser.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/arthuryeti/advnt-screen-parser"
+Repository = "https://github.com/arthuryeti/advnt-screen-parser"
+"Model Weights" = "https://huggingface.co/arthuryeti/advnt-screen-parser"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/advnt_screen_parser"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,1174 @@
+{
+  "provider": "rapidocr",
+  "status": "ready",
+  "engine": "onnxruntime",
+  "ocrModel": "PP-OCRv6-tiny",
+  "iconModel": "advnt-icons-v3-yolo11s",
+  "width": 461,
+  "height": 1015,
+  "ocrMs": 134.4,
+  "iconsMs": 33.2,
+  "uitreeMs": 12.3,
+  "totalMs": 179.9,
+  "text": "9:39 Billy Joel didn't write you'refaling behind\" \"hurry up, Instead, hewrote.. 9,951 678 6A erikajimamcelhaney gentfe remnd Q D",
+  "words": [
+    {
+      "text": "9:39",
+      "confidence": 0.9731,
+      "boxPct": [
+        9.54,
+        1.28,
+        17.35,
+        4.04
+      ]
+    },
+    {
+      "text": "Billy",
+      "confidence": 0.9969,
+      "boxPct": [
+        32.75,
+        20.2,
+        39.48,
+        22.17
+      ]
+    },
+    {
+      "text": "Joel",
+      "confidence": 0.5024,
+      "boxPct": [
+        40.13,
+        20.2,
+        47.51,
+        22.17
+      ]
+    },
+    {
+      "text": "didn't",
+      "confidence": 0.9965,
+      "boxPct": [
+        48.16,
+        20.2,
+        57.7,
+        22.17
+      ]
+    },
+    {
+      "text": "write",
+      "confidence": 0.9997,
+      "boxPct": [
+        59.0,
+        20.2,
+        66.38,
+        22.17
+      ]
+    },
+    {
+      "text": "you'refaling",
+      "confidence": 0.9931,
+      "boxPct": [
+        41.0,
+        21.77,
+        61.17,
+        24.04
+      ]
+    },
+    {
+      "text": "behind\"",
+      "confidence": 0.9995,
+      "boxPct": [
+        62.47,
+        21.77,
+        75.92,
+        24.04
+      ]
+    },
+    {
+      "text": "\"hurry",
+      "confidence": 0.8221,
+      "boxPct": [
+        22.99,
+        21.87,
+        34.27,
+        24.04
+      ]
+    },
+    {
+      "text": "up,",
+      "confidence": 0.9996,
+      "boxPct": [
+        35.36,
+        21.87,
+        40.56,
+        24.04
+      ]
+    },
+    {
+      "text": "Instead,",
+      "confidence": 0.8885,
+      "boxPct": [
+        33.84,
+        23.55,
+        48.16,
+        25.71
+      ]
+    },
+    {
+      "text": "hewrote..",
+      "confidence": 0.9992,
+      "boxPct": [
+        48.37,
+        23.65,
+        65.29,
+        26.01
+      ]
+    },
+    {
+      "text": "9,951",
+      "confidence": 1.0,
+      "boxPct": [
+        88.07,
+        45.12,
+        96.53,
+        47.39
+      ]
+    },
+    {
+      "text": "678",
+      "confidence": 0.6465,
+      "boxPct": [
+        89.8,
+        63.15,
+        94.36,
+        64.63
+      ]
+    },
+    {
+      "text": "6A",
+      "confidence": 0.9847,
+      "boxPct": [
+        94.79,
+        71.23,
+        99.57,
+        72.81
+      ]
+    },
+    {
+      "text": "erikajimamcelhaney",
+      "confidence": 0.9999,
+      "boxPct": [
+        17.79,
+        79.01,
+        52.28,
+        81.48
+      ]
+    },
+    {
+      "text": "gentfe",
+      "confidence": 0.9999,
+      "boxPct": [
+        3.69,
+        85.52,
+        14.1,
+        87.39
+      ]
+    },
+    {
+      "text": "remnd",
+      "confidence": 0.9992,
+      "boxPct": [
+        14.53,
+        85.52,
+        26.9,
+        87.59
+      ]
+    },
+    {
+      "text": "Q",
+      "confidence": 0.9901,
+      "boxPct": [
+        67.03,
+        91.43,
+        73.1,
+        94.09
+      ]
+    },
+    {
+      "text": "D",
+      "confidence": 0.5259,
+      "boxPct": [
+        26.03,
+        91.03,
+        33.41,
+        94.78
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "label": "ig_repost",
+      "confidence": 0.856,
+      "box": [
+        405,
+        585,
+        445,
+        633
+      ],
+      "boxPct": [
+        87.9,
+        57.6,
+        96.5,
+        62.4
+      ],
+      "centerPct": [
+        92.2,
+        60.0
+      ]
+    },
+    {
+      "label": "ig_search",
+      "confidence": 0.835,
+      "box": [
+        302,
+        919,
+        342,
+        966
+      ],
+      "boxPct": [
+        65.5,
+        90.5,
+        74.2,
+        95.2
+      ],
+      "centerPct": [
+        69.8,
+        92.9
+      ]
+    },
+    {
+      "label": "ig_profile_tab",
+      "confidence": 0.821,
+      "box": [
+        393,
+        918,
+        438,
+        968
+      ],
+      "boxPct": [
+        85.2,
+        90.4,
+        95.0,
+        95.4
+      ],
+      "centerPct": [
+        90.1,
+        92.9
+      ]
+    },
+    {
+      "label": "ig_like",
+      "confidence": 0.821,
+      "box": [
+        404,
+        410,
+        444,
+        457
+      ],
+      "boxPct": [
+        87.6,
+        40.4,
+        96.3,
+        45.0
+      ],
+      "centerPct": [
+        92.0,
+        42.7
+      ]
+    },
+    {
+      "label": "ig_home_tab",
+      "confidence": 0.82,
+      "box": [
+        21,
+        919,
+        65,
+        970
+      ],
+      "boxPct": [
+        4.6,
+        90.5,
+        14.1,
+        95.6
+      ],
+      "centerPct": [
+        9.3,
+        93.1
+      ]
+    },
+    {
+      "label": "ig_reels_tab",
+      "confidence": 0.799,
+      "box": [
+        114,
+        918,
+        159,
+        969
+      ],
+      "boxPct": [
+        24.7,
+        90.4,
+        34.5,
+        95.5
+      ],
+      "centerPct": [
+        29.6,
+        93.0
+      ]
+    },
+    {
+      "label": "ig_comment",
+      "confidence": 0.741,
+      "box": [
+        404,
+        495,
+        444,
+        543
+      ],
+      "boxPct": [
+        87.6,
+        48.8,
+        96.3,
+        53.5
+      ],
+      "centerPct": [
+        92.0,
+        51.1
+      ]
+    },
+    {
+      "label": "ig_save",
+      "confidence": 0.729,
+      "box": [
+        404,
+        760,
+        445,
+        809
+      ],
+      "boxPct": [
+        87.6,
+        74.9,
+        96.5,
+        79.7
+      ],
+      "centerPct": [
+        92.1,
+        77.3
+      ]
+    },
+    {
+      "label": "ig_share",
+      "confidence": 0.583,
+      "box": [
+        405,
+        674,
+        445,
+        721
+      ],
+      "boxPct": [
+        87.9,
+        66.4,
+        96.5,
+        71.0
+      ],
+      "centerPct": [
+        92.2,
+        68.7
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "id": 1,
+      "role": "text",
+      "label": "9:39",
+      "boxPct": [
+        9.3,
+        1.2,
+        17.1,
+        4.0
+      ],
+      "centerPct": [
+        13.2,
+        2.6
+      ],
+      "where": "top left"
+    },
+    {
+      "id": 2,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        88.9,
+        3.3,
+        94.4,
+        6.5
+      ],
+      "centerPct": [
+        91.6,
+        4.9
+      ],
+      "where": "top right"
+    },
+    {
+      "id": 3,
+      "role": "blank",
+      "label": "empty area",
+      "boxPct": [
+        0.0,
+        6.5,
+        100.0,
+        20.2
+      ],
+      "centerPct": [
+        50.0,
+        13.3
+      ],
+      "where": "top center"
+    },
+    {
+      "id": 4,
+      "role": "text",
+      "label": "Billy",
+      "boxPct": [
+        32.5,
+        20.2,
+        39.5,
+        22.2
+      ],
+      "centerPct": [
+        36.0,
+        21.2
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 5,
+      "role": "text",
+      "label": "Joel",
+      "boxPct": [
+        39.9,
+        20.2,
+        47.5,
+        22.2
+      ],
+      "centerPct": [
+        43.7,
+        21.2
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 6,
+      "role": "text",
+      "label": "didn't",
+      "boxPct": [
+        48.2,
+        20.2,
+        57.5,
+        22.2
+      ],
+      "centerPct": [
+        52.8,
+        21.2
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 7,
+      "role": "text",
+      "label": "write",
+      "boxPct": [
+        58.8,
+        20.2,
+        66.4,
+        22.2
+      ],
+      "centerPct": [
+        62.6,
+        21.2
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 8,
+      "role": "text",
+      "label": "\"hurry",
+      "boxPct": [
+        22.8,
+        21.8,
+        34.1,
+        24.0
+      ],
+      "centerPct": [
+        28.4,
+        22.9
+      ],
+      "where": "upper left"
+    },
+    {
+      "id": 9,
+      "role": "text",
+      "label": "up,",
+      "boxPct": [
+        35.4,
+        21.8,
+        40.3,
+        24.0
+      ],
+      "centerPct": [
+        37.9,
+        22.9
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 10,
+      "role": "text",
+      "label": "you'refaling",
+      "boxPct": [
+        41.0,
+        21.7,
+        61.0,
+        24.0
+      ],
+      "centerPct": [
+        51.0,
+        22.9
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 11,
+      "role": "text",
+      "label": "behind\"",
+      "boxPct": [
+        62.3,
+        21.7,
+        75.7,
+        24.0
+      ],
+      "centerPct": [
+        69.0,
+        22.9
+      ],
+      "where": "upper right"
+    },
+    {
+      "id": 12,
+      "role": "text",
+      "label": "Instead,",
+      "boxPct": [
+        33.8,
+        23.5,
+        48.2,
+        25.6
+      ],
+      "centerPct": [
+        41.0,
+        24.6
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 13,
+      "role": "text",
+      "label": "hewrote..",
+      "boxPct": [
+        48.2,
+        23.6,
+        65.1,
+        26.0
+      ],
+      "centerPct": [
+        56.6,
+        24.8
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 14,
+      "role": "blank",
+      "label": "empty area",
+      "boxPct": [
+        0.0,
+        26.0,
+        100.0,
+        40.4
+      ],
+      "centerPct": [
+        50.0,
+        33.2
+      ],
+      "where": "upper center"
+    },
+    {
+      "id": 15,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        0.0,
+        50.1,
+        4.3,
+        54.2
+      ],
+      "centerPct": [
+        2.2,
+        52.2
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 16,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        0.0,
+        49.7,
+        3.7,
+        52.7
+      ],
+      "centerPct": [
+        1.8,
+        51.2
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 17,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        8.7,
+        53.8,
+        15.8,
+        55.9
+      ],
+      "centerPct": [
+        12.3,
+        54.8
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 18,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        13.2,
+        54.8,
+        21.3,
+        56.7
+      ],
+      "centerPct": [
+        17.2,
+        55.8
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 19,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        11.1,
+        55.2,
+        14.3,
+        56.4
+      ],
+      "centerPct": [
+        12.7,
+        55.8
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 20,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        15.8,
+        55.5,
+        24.9,
+        57.5
+      ],
+      "centerPct": [
+        20.4,
+        56.5
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 21,
+      "role": "icon",
+      "label": "near \"9,951\"",
+      "boxPct": [
+        43.6,
+        46.3,
+        49.0,
+        48.1
+      ],
+      "centerPct": [
+        46.3,
+        47.2
+      ],
+      "where": "middle center"
+    },
+    {
+      "id": 22,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        32.5,
+        58.4,
+        35.4,
+        59.9
+      ],
+      "centerPct": [
+        33.9,
+        59.2
+      ],
+      "where": "middle center"
+    },
+    {
+      "id": 23,
+      "role": "icon",
+      "label": "near \"678\"",
+      "boxPct": [
+        35.6,
+        57.6,
+        48.2,
+        63.3
+      ],
+      "centerPct": [
+        41.9,
+        60.4
+      ],
+      "where": "lower center"
+    },
+    {
+      "id": 24,
+      "role": "icon",
+      "label": "near \"678\"",
+      "boxPct": [
+        45.6,
+        62.4,
+        48.4,
+        63.7
+      ],
+      "centerPct": [
+        47.0,
+        63.1
+      ],
+      "where": "lower center"
+    },
+    {
+      "id": 25,
+      "role": "icon",
+      "label": "like",
+      "boxPct": [
+        87.6,
+        40.4,
+        96.3,
+        45.0
+      ],
+      "centerPct": [
+        92.0,
+        42.7
+      ],
+      "where": "upper right"
+    },
+    {
+      "id": 26,
+      "role": "text",
+      "label": "9,951",
+      "boxPct": [
+        88.1,
+        45.0,
+        96.5,
+        47.4
+      ],
+      "centerPct": [
+        92.3,
+        46.2
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 27,
+      "role": "icon",
+      "label": "comment",
+      "boxPct": [
+        87.6,
+        48.8,
+        96.3,
+        53.5
+      ],
+      "centerPct": [
+        92.0,
+        51.1
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 28,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        95.4,
+        56.8,
+        100.0,
+        58.8
+      ],
+      "centerPct": [
+        97.7,
+        57.8
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 29,
+      "role": "icon",
+      "label": "repost",
+      "boxPct": [
+        87.9,
+        57.6,
+        96.5,
+        62.4
+      ],
+      "centerPct": [
+        92.2,
+        60.0
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 30,
+      "role": "text",
+      "label": "678",
+      "boxPct": [
+        89.6,
+        63.1,
+        94.1,
+        64.5
+      ],
+      "centerPct": [
+        91.9,
+        63.8
+      ],
+      "where": "lower right"
+    },
+    {
+      "id": 31,
+      "role": "icon",
+      "label": "near \"9,951\"",
+      "boxPct": [
+        75.3,
+        46.2,
+        82.2,
+        48.6
+      ],
+      "centerPct": [
+        78.7,
+        47.4
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 32,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        67.5,
+        52.6,
+        73.3,
+        55.2
+      ],
+      "centerPct": [
+        70.4,
+        53.9
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 33,
+      "role": "icon",
+      "label": "share",
+      "boxPct": [
+        87.9,
+        66.4,
+        96.5,
+        71.0
+      ],
+      "centerPct": [
+        92.2,
+        68.7
+      ],
+      "where": "lower right"
+    },
+    {
+      "id": 34,
+      "role": "text",
+      "label": "6A",
+      "boxPct": [
+        94.6,
+        71.1,
+        99.6,
+        72.8
+      ],
+      "centerPct": [
+        97.1,
+        72.0
+      ],
+      "where": "lower right"
+    },
+    {
+      "id": 35,
+      "role": "icon",
+      "label": "save",
+      "boxPct": [
+        87.6,
+        74.9,
+        96.5,
+        79.7
+      ],
+      "centerPct": [
+        92.1,
+        77.3
+      ],
+      "where": "lower right"
+    },
+    {
+      "id": 36,
+      "role": "text",
+      "label": "erikajimamcelhaney",
+      "boxPct": [
+        17.8,
+        78.9,
+        52.3,
+        81.5
+      ],
+      "centerPct": [
+        35.0,
+        80.2
+      ],
+      "where": "lower center"
+    },
+    {
+      "id": 37,
+      "role": "icon",
+      "label": "near \"erikajimamcelhaney\"",
+      "boxPct": [
+        97.8,
+        79.1,
+        100.0,
+        81.2
+      ],
+      "centerPct": [
+        98.9,
+        80.1
+      ],
+      "where": "lower right"
+    },
+    {
+      "id": 38,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        66.6,
+        81.1,
+        72.0,
+        84.4
+      ],
+      "centerPct": [
+        69.3,
+        82.8
+      ],
+      "where": "lower right"
+    },
+    {
+      "id": 39,
+      "role": "text",
+      "label": "gentfe",
+      "boxPct": [
+        3.7,
+        85.5,
+        14.1,
+        87.4
+      ],
+      "centerPct": [
+        8.9,
+        86.5
+      ],
+      "where": "bottom left"
+    },
+    {
+      "id": 40,
+      "role": "text",
+      "label": "remnd",
+      "boxPct": [
+        14.3,
+        85.5,
+        26.9,
+        87.6
+      ],
+      "centerPct": [
+        20.6,
+        86.6
+      ],
+      "where": "bottom left"
+    },
+    {
+      "id": 41,
+      "role": "icon",
+      "label": "near \"remnd\"",
+      "boxPct": [
+        90.7,
+        86.4,
+        93.9,
+        87.6
+      ],
+      "centerPct": [
+        92.3,
+        87.0
+      ],
+      "where": "bottom right"
+    },
+    {
+      "id": 42,
+      "role": "icon",
+      "label": "reels_tab",
+      "boxPct": [
+        24.7,
+        90.4,
+        34.5,
+        95.5
+      ],
+      "centerPct": [
+        29.6,
+        93.0
+      ],
+      "where": "bottom left"
+    },
+    {
+      "id": 43,
+      "role": "text",
+      "label": "D",
+      "boxPct": [
+        25.8,
+        90.9,
+        33.4,
+        94.8
+      ],
+      "centerPct": [
+        29.6,
+        92.9
+      ],
+      "where": "bottom left"
+    },
+    {
+      "id": 44,
+      "role": "icon",
+      "label": "near \"D\"",
+      "boxPct": [
+        46.6,
+        91.5,
+        53.4,
+        94.4
+      ],
+      "centerPct": [
+        50.0,
+        93.0
+      ],
+      "where": "bottom center"
+    },
+    {
+      "id": 45,
+      "role": "icon",
+      "label": "near \"D\"",
+      "boxPct": [
+        47.9,
+        92.1,
+        52.1,
+        93.8
+      ],
+      "centerPct": [
+        50.0,
+        93.0
+      ],
+      "where": "bottom center"
+    },
+    {
+      "id": 46,
+      "role": "icon",
+      "label": "search",
+      "boxPct": [
+        65.5,
+        90.5,
+        74.2,
+        95.2
+      ],
+      "centerPct": [
+        69.8,
+        92.9
+      ],
+      "where": "bottom right"
+    },
+    {
+      "id": 47,
+      "role": "text",
+      "label": "Q",
+      "boxPct": [
+        67.0,
+        91.4,
+        72.9,
+        94.1
+      ],
+      "centerPct": [
+        70.0,
+        92.8
+      ],
+      "where": "bottom right"
+    },
+    {
+      "id": 48,
+      "role": "icon",
+      "label": "profile_tab",
+      "boxPct": [
+        85.2,
+        90.4,
+        95.0,
+        95.4
+      ],
+      "centerPct": [
+        90.1,
+        92.9
+      ],
+      "where": "bottom right"
+    },
+    {
+      "id": 49,
+      "role": "icon",
+      "label": "home_tab",
+      "boxPct": [
+        4.6,
+        90.5,
+        14.1,
+        95.6
+      ],
+      "centerPct": [
+        9.3,
+        93.1
+      ],
+      "where": "bottom left"
+    }
+  ]
+}
