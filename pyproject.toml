@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "advnt-screen-parser"
-version = "4.0.0"
-description = "CPU-fast iOS screen parser combining a 99-class portrait YOLOv11s ONNX UI icon detector (~25ms CPU) with RapidOCR and a geometric UI element tree."
+version = "5.0.0"
+description = "CPU-fast iOS screen parser combining a 99-class portrait (960x480) YOLOv11m ONNX UI icon detector (95.3% weighted / 92.7% macro mAP@50) with parallel RapidOCR and a geometric UI element tree."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT (code) / AGPL-3.0 (v4 YOLOv11s model weights)" }
+license = { text = "MIT (code) / AGPL-3.0 (v5 YOLOv11m model weights)" }
 authors = [{ name = "Arthur Yeti" }]
 keywords = [
     "ios",

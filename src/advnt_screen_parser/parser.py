@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor
 import os
 import threading
 import time
@@ -15,7 +16,7 @@ from .icon_detector import DEFAULT_HF_REPO, IconDetector
 PROVIDER = "rapidocr"
 ENGINE = "onnxruntime"
 OCR_MODEL = "PP-OCRv6-tiny"
-ICON_MODEL = "advnt-icons-v4-yolo11s"
+ICON_MODEL = "advnt-icons-v5-yolo11m"
 
 
 def create_ocr_engine(
@@ -63,7 +64,7 @@ def create_ocr_engine(
 
 
 class ScreenParser:
-    """End-to-end iOS screen parser: RapidOCR (PP-OCRv6-tiny) + Advnt v4 IconDetector + UI tree."""
+    """End-to-end iOS screen parser: parallel RapidOCR (PP-OCRv6-tiny) + Advnt v5 IconDetector + UI tree."""
 
     def __init__(
         self,
@@ -92,10 +93,30 @@ class ScreenParser:
             auto_download=auto_download,
         )
         self._lock = threading.Lock()
+        self._pool = ThreadPoolExecutor(max_workers=2)
 
     @property
     def icons(self) -> IconDetector:
         return self._icons
+
+    def _run_ocr(self, image_bgr: np.ndarray, width: int, height: int) -> tuple[list[dict[str, Any]], float]:
+        if self._ocr is None:
+            return [], 0.0
+        t0 = time.perf_counter()
+        with self._lock:
+            result = self._ocr(
+                image_bgr,
+                use_det=True,
+                use_cls=False,
+                use_rec=True,
+                return_word_box=True,
+            )
+        return _normalized_words(result, width, height), round((time.perf_counter() - t0) * 1_000, 1)
+
+    def _run_icons(self, image_bgr: np.ndarray) -> tuple[list[dict[str, Any]], float]:
+        t0 = time.perf_counter()
+        icons = self._icons.detect(image_bgr)
+        return icons, round((time.perf_counter() - t0) * 1_000, 1)
 
     def warm_up(self) -> None:
         if self._ocr is not None:
@@ -124,29 +145,20 @@ class ScreenParser:
 
     def parse_image(self, image_bgr: np.ndarray) -> dict[str, Any]:
         height, width = image_bgr.shape[:2]
+        t_start = time.perf_counter()
 
-        words: list[dict[str, Any]] = []
-        ocr_ms = 0.0
         if self._ocr is not None:
-            t_ocr = time.perf_counter()
-            with self._lock:
-                result = self._ocr(
-                    image_bgr,
-                    use_det=True,
-                    use_cls=False,
-                    use_rec=True,
-                    return_word_box=True,
-                )
-            ocr_ms = round((time.perf_counter() - t_ocr) * 1_000, 1)
-            words = _normalized_words(result, width, height)
-
-        t_icons = time.perf_counter()
-        icons = self._icons.detect(image_bgr)
-        icons_ms = round((time.perf_counter() - t_icons) * 1_000, 1)
+            ocr_fut = self._pool.submit(self._run_ocr, image_bgr, width, height)
+            icons, icons_ms = self._run_icons(image_bgr)
+            words, ocr_ms = ocr_fut.result()
+        else:
+            words, ocr_ms = [], 0.0
+            icons, icons_ms = self._run_icons(image_bgr)
 
         t_tree = time.perf_counter()
         elements = uitree.build(width, height, words, image_bgr, icons=icons)
         uitree_ms = round((time.perf_counter() - t_tree) * 1_000, 1)
+        total_ms = round((time.perf_counter() - t_start) * 1_000, 1)
 
         return {
             "provider": PROVIDER if self._ocr is not None else "icons-only",
@@ -159,7 +171,7 @@ class ScreenParser:
             "ocrMs": ocr_ms,
             "iconsMs": icons_ms,
             "uitreeMs": uitree_ms,
-            "totalMs": round(ocr_ms + icons_ms + uitree_ms, 1),
+            "totalMs": total_ms,
             "text": " ".join(word["text"] for word in words),
             "words": words,
             "icons": icons,

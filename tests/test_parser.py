@@ -145,7 +145,7 @@ def test_icon_detector_local_weights() -> None:
     det = IconDetector(model_path=model_path, auto_download=False)
     assert det.available
     assert len(det.names) == 99
-    assert det.imgsz == (800, 416)
+    assert det.imgsz == (960, 480)
     example = Path(__file__).resolve().parents[1] / "assets" / "examples" / "instagram_feed.jpg"
     if example.is_file():
         res = det.detect_file(example)
