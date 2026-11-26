@@ -15,7 +15,7 @@ from .icon_detector import DEFAULT_HF_REPO, IconDetector
 PROVIDER = "rapidocr"
 ENGINE = "onnxruntime"
 OCR_MODEL = "PP-OCRv6-tiny"
-ICON_MODEL = "advnt-icons-v3-yolo11s"
+ICON_MODEL = "advnt-icons-v4-yolo11s"
 
 
 def create_ocr_engine(
@@ -63,7 +63,7 @@ def create_ocr_engine(
 
 
 class ScreenParser:
-    """End-to-end iOS screen parser: RapidOCR (PP-OCRv6-tiny) + Advnt v3 IconDetector + UI tree."""
+    """End-to-end iOS screen parser: RapidOCR (PP-OCRv6-tiny) + Advnt v4 IconDetector + UI tree."""
 
     def __init__(
         self,

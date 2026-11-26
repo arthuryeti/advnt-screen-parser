@@ -3,18 +3,18 @@
   "status": "ready",
   "engine": "onnxruntime",
   "ocrModel": "PP-OCRv6-tiny",
-  "iconModel": "advnt-icons-v3-yolo11s",
+  "iconModel": "advnt-icons-v4-yolo11s",
   "width": 461,
   "height": 1015,
-  "ocrMs": 134.4,
-  "iconsMs": 33.2,
-  "uitreeMs": 12.3,
-  "totalMs": 179.9,
-  "text": "9:39 Billy Joel didn't write you'refaling behind\" \"hurry up, Instead, hewrote.. 9,951 678 6A erikajimamcelhaney gentfe remnd Q D",
+  "ocrMs": 133.1,
+  "iconsMs": 26.1,
+  "uitreeMs": 13.4,
+  "totalMs": 172.6,
+  "text": "9:39 Billy Joel didn't write you'refalling behind\" \"hurry up, Instead, hewrote. 9,951 678 6A erikajimamcelhaney gentfe remnd Q D 0",
   "words": [
     {
       "text": "9:39",
-      "confidence": 0.9731,
+      "confidence": 0.9702,
       "boxPct": [
         9.54,
         1.28,
@@ -24,87 +24,87 @@
     },
     {
       "text": "Billy",
-      "confidence": 0.9969,
+      "confidence": 0.9917,
       "boxPct": [
-        32.75,
+        32.54,
         20.2,
-        39.48,
+        39.26,
         22.17
       ]
     },
     {
       "text": "Joel",
-      "confidence": 0.5024,
+      "confidence": 0.9972,
       "boxPct": [
-        40.13,
+        40.56,
         20.2,
-        47.51,
+        47.29,
         22.17
       ]
     },
     {
       "text": "didn't",
-      "confidence": 0.9965,
+      "confidence": 0.8857,
       "boxPct": [
-        48.16,
+        47.94,
         20.2,
-        57.7,
+        57.48,
         22.17
       ]
     },
     {
       "text": "write",
-      "confidence": 0.9997,
+      "confidence": 0.9975,
       "boxPct": [
-        59.0,
+        58.79,
         20.2,
-        66.38,
+        67.03,
         22.17
       ]
     },
     {
-      "text": "you'refaling",
-      "confidence": 0.9931,
+      "text": "you'refalling",
+      "confidence": 0.9892,
       "boxPct": [
         41.0,
         21.77,
-        61.17,
+        62.26,
         24.04
       ]
     },
     {
       "text": "behind\"",
-      "confidence": 0.9995,
+      "confidence": 0.9991,
       "boxPct": [
-        62.47,
-        21.77,
-        75.92,
+        62.69,
+        21.67,
+        76.14,
         24.04
       ]
     },
     {
       "text": "\"hurry",
-      "confidence": 0.8221,
+      "confidence": 0.7623,
       "boxPct": [
-        22.99,
+        23.86,
         21.87,
-        34.27,
+        34.06,
         24.04
       ]
     },
     {
       "text": "up,",
-      "confidence": 0.9996,
+      "confidence": 0.9994,
       "boxPct": [
         35.36,
         21.87,
-        40.56,
+        40.35,
         24.04
       ]
     },
     {
       "text": "Instead,",
-      "confidence": 0.8885,
+      "confidence": 0.8878,
       "boxPct": [
         33.84,
         23.55,
@@ -113,13 +113,13 @@
       ]
     },
     {
-      "text": "hewrote..",
-      "confidence": 0.9992,
+      "text": "hewrote.",
+      "confidence": 0.9991,
       "boxPct": [
         48.37,
         23.65,
-        65.29,
-        26.01
+        63.56,
+        25.91
       ]
     },
     {
@@ -134,22 +134,22 @@
     },
     {
       "text": "678",
-      "confidence": 0.6465,
+      "confidence": 0.5848,
       "boxPct": [
         89.8,
         63.15,
-        94.36,
+        94.14,
         64.63
       ]
     },
     {
       "text": "6A",
-      "confidence": 0.9847,
+      "confidence": 0.9231,
       "boxPct": [
         94.79,
-        71.23,
-        99.57,
-        72.81
+        71.33,
+        99.35,
+        72.71
       ]
     },
     {
@@ -174,7 +174,7 @@
     },
     {
       "text": "remnd",
-      "confidence": 0.9992,
+      "confidence": 0.9993,
       "boxPct": [
         14.53,
         85.52,
@@ -184,7 +184,7 @@
     },
     {
       "text": "Q",
-      "confidence": 0.9901,
+      "confidence": 0.9906,
       "boxPct": [
         67.03,
         91.43,
@@ -194,130 +194,60 @@
     },
     {
       "text": "D",
-      "confidence": 0.5259,
+      "confidence": 0.4507,
       "boxPct": [
         26.03,
         91.03,
         33.41,
         94.78
       ]
+    },
+    {
+      "text": "0",
+      "confidence": 0.4532,
+      "boxPct": [
+        46.64,
+        91.43,
+        53.36,
+        94.38
+      ]
     }
   ],
   "icons": [
     {
-      "label": "ig_repost",
-      "confidence": 0.856,
+      "label": "ig_search_tab",
+      "confidence": 0.966,
       "box": [
-        405,
-        585,
-        445,
-        633
+        308,
+        929,
+        338,
+        958
       ],
       "boxPct": [
-        87.9,
-        57.6,
-        96.5,
-        62.4
+        66.8,
+        91.5,
+        73.3,
+        94.4
       ],
       "centerPct": [
-        92.2,
-        60.0
-      ]
-    },
-    {
-      "label": "ig_search",
-      "confidence": 0.835,
-      "box": [
-        302,
-        919,
-        342,
-        966
-      ],
-      "boxPct": [
-        65.5,
-        90.5,
-        74.2,
-        95.2
-      ],
-      "centerPct": [
-        69.8,
-        92.9
-      ]
-    },
-    {
-      "label": "ig_profile_tab",
-      "confidence": 0.821,
-      "box": [
-        393,
-        918,
-        438,
-        968
-      ],
-      "boxPct": [
-        85.2,
-        90.4,
-        95.0,
-        95.4
-      ],
-      "centerPct": [
-        90.1,
-        92.9
-      ]
-    },
-    {
-      "label": "ig_like",
-      "confidence": 0.821,
-      "box": [
-        404,
-        410,
-        444,
-        457
-      ],
-      "boxPct": [
-        87.6,
-        40.4,
-        96.3,
-        45.0
-      ],
-      "centerPct": [
-        92.0,
-        42.7
-      ]
-    },
-    {
-      "label": "ig_home_tab",
-      "confidence": 0.82,
-      "box": [
-        21,
-        919,
-        65,
-        970
-      ],
-      "boxPct": [
-        4.6,
-        90.5,
-        14.1,
-        95.6
-      ],
-      "centerPct": [
-        9.3,
-        93.1
+        70.1,
+        93.0
       ]
     },
     {
       "label": "ig_reels_tab",
-      "confidence": 0.799,
+      "confidence": 0.953,
       "box": [
-        114,
-        918,
-        159,
-        969
+        122,
+        929,
+        151,
+        959
       ],
       "boxPct": [
-        24.7,
-        90.4,
-        34.5,
-        95.5
+        26.5,
+        91.5,
+        32.8,
+        94.5
       ],
       "centerPct": [
         29.6,
@@ -325,59 +255,179 @@
       ]
     },
     {
-      "label": "ig_comment",
-      "confidence": 0.741,
+      "label": "ig_home_tab",
+      "confidence": 0.95,
       "box": [
-        404,
-        495,
-        444,
-        543
+        28,
+        929,
+        59,
+        960
       ],
       "boxPct": [
-        87.6,
-        48.8,
-        96.3,
-        53.5
+        6.1,
+        91.5,
+        12.8,
+        94.6
       ],
       "centerPct": [
-        92.0,
-        51.1
+        9.4,
+        93.1
       ]
     },
     {
       "label": "ig_save",
-      "confidence": 0.729,
+      "confidence": 0.949,
       "box": [
-        404,
-        760,
-        445,
-        809
+        410,
+        771,
+        439,
+        803
       ],
       "boxPct": [
-        87.6,
-        74.9,
-        96.5,
-        79.7
+        88.9,
+        76.0,
+        95.2,
+        79.1
       ],
       "centerPct": [
         92.1,
-        77.3
+        77.5
+      ]
+    },
+    {
+      "label": "ig_messages_tab",
+      "confidence": 0.944,
+      "box": [
+        215,
+        930,
+        244,
+        957
+      ],
+      "boxPct": [
+        46.6,
+        91.6,
+        52.9,
+        94.3
+      ],
+      "centerPct": [
+        49.8,
+        93.0
+      ]
+    },
+    {
+      "label": "ig_comment",
+      "confidence": 0.928,
+      "box": [
+        408,
+        502,
+        442,
+        538
+      ],
+      "boxPct": [
+        88.5,
+        49.5,
+        95.9,
+        53.0
+      ],
+      "centerPct": [
+        92.2,
+        51.2
+      ]
+    },
+    {
+      "label": "ig_like",
+      "confidence": 0.925,
+      "box": [
+        407,
+        418,
+        441,
+        449
+      ],
+      "boxPct": [
+        88.3,
+        41.2,
+        95.7,
+        44.2
+      ],
+      "centerPct": [
+        92.0,
+        42.7
+      ]
+    },
+    {
+      "label": "ig_profile_tab",
+      "confidence": 0.925,
+      "box": [
+        400,
+        927,
+        431,
+        958
+      ],
+      "boxPct": [
+        86.8,
+        91.3,
+        93.5,
+        94.4
+      ],
+      "centerPct": [
+        90.1,
+        92.9
+      ]
+    },
+    {
+      "label": "ig_avatar",
+      "confidence": 0.905,
+      "box": [
+        16,
+        799,
+        69,
+        855
+      ],
+      "boxPct": [
+        3.5,
+        78.7,
+        15.0,
+        84.2
+      ],
+      "centerPct": [
+        9.2,
+        81.5
+      ]
+    },
+    {
+      "label": "ig_repost",
+      "confidence": 0.879,
+      "box": [
+        410,
+        591,
+        441,
+        625
+      ],
+      "boxPct": [
+        88.9,
+        58.2,
+        95.7,
+        61.6
+      ],
+      "centerPct": [
+        92.3,
+        59.9
       ]
     },
     {
       "label": "ig_share",
-      "confidence": 0.583,
+      "confidence": 0.836,
       "box": [
-        405,
-        674,
-        445,
-        721
+        409,
+        682,
+        441,
+        712
       ],
       "boxPct": [
-        87.9,
-        66.4,
-        96.5,
-        71.0
+        88.7,
+        67.2,
+        95.7,
+        70.1
       ],
       "centerPct": [
         92.2,
@@ -441,11 +491,11 @@
       "boxPct": [
         32.5,
         20.2,
-        39.5,
+        39.0,
         22.2
       ],
       "centerPct": [
-        36.0,
+        35.8,
         21.2
       ],
       "where": "upper center"
@@ -455,13 +505,13 @@
       "role": "text",
       "label": "Joel",
       "boxPct": [
-        39.9,
+        40.3,
         20.2,
-        47.5,
+        47.3,
         22.2
       ],
       "centerPct": [
-        43.7,
+        43.8,
         21.2
       ],
       "where": "upper center"
@@ -471,13 +521,13 @@
       "role": "text",
       "label": "didn't",
       "boxPct": [
-        48.2,
+        47.9,
         20.2,
-        57.5,
+        57.3,
         22.2
       ],
       "centerPct": [
-        52.8,
+        52.6,
         21.2
       ],
       "where": "upper center"
@@ -489,11 +539,11 @@
       "boxPct": [
         58.8,
         20.2,
-        66.4,
+        67.0,
         22.2
       ],
       "centerPct": [
-        62.6,
+        62.9,
         21.2
       ],
       "where": "upper center"
@@ -503,13 +553,13 @@
       "role": "text",
       "label": "\"hurry",
       "boxPct": [
-        22.8,
+        23.6,
         21.8,
         34.1,
         24.0
       ],
       "centerPct": [
-        28.4,
+        28.9,
         22.9
       ],
       "where": "upper left"
@@ -533,15 +583,15 @@
     {
       "id": 10,
       "role": "text",
-      "label": "you'refaling",
+      "label": "you'refalling",
       "boxPct": [
         41.0,
         21.7,
-        61.0,
+        62.3,
         24.0
       ],
       "centerPct": [
-        51.0,
+        51.6,
         22.9
       ],
       "where": "upper center"
@@ -551,14 +601,14 @@
       "role": "text",
       "label": "behind\"",
       "boxPct": [
-        62.3,
-        21.7,
-        75.7,
+        62.7,
+        21.6,
+        76.1,
         24.0
       ],
       "centerPct": [
-        69.0,
-        22.9
+        69.4,
+        22.8
       ],
       "where": "upper right"
     },
@@ -581,16 +631,16 @@
     {
       "id": 13,
       "role": "text",
-      "label": "hewrote..",
+      "label": "hewrote.",
       "boxPct": [
         48.2,
         23.6,
-        65.1,
-        26.0
+        63.6,
+        25.8
       ],
       "centerPct": [
-        56.6,
-        24.8
+        55.9,
+        24.7
       ],
       "where": "upper center"
     },
@@ -600,185 +650,25 @@
       "label": "empty area",
       "boxPct": [
         0.0,
-        26.0,
+        25.8,
         100.0,
-        40.4
+        41.2
       ],
       "centerPct": [
         50.0,
-        33.2
+        33.5
       ],
       "where": "upper center"
     },
     {
       "id": 15,
       "role": "icon",
-      "label": "",
-      "boxPct": [
-        0.0,
-        50.1,
-        4.3,
-        54.2
-      ],
-      "centerPct": [
-        2.2,
-        52.2
-      ],
-      "where": "middle left"
-    },
-    {
-      "id": 16,
-      "role": "icon",
-      "label": "",
-      "boxPct": [
-        0.0,
-        49.7,
-        3.7,
-        52.7
-      ],
-      "centerPct": [
-        1.8,
-        51.2
-      ],
-      "where": "middle left"
-    },
-    {
-      "id": 17,
-      "role": "icon",
-      "label": "",
-      "boxPct": [
-        8.7,
-        53.8,
-        15.8,
-        55.9
-      ],
-      "centerPct": [
-        12.3,
-        54.8
-      ],
-      "where": "middle left"
-    },
-    {
-      "id": 18,
-      "role": "icon",
-      "label": "",
-      "boxPct": [
-        13.2,
-        54.8,
-        21.3,
-        56.7
-      ],
-      "centerPct": [
-        17.2,
-        55.8
-      ],
-      "where": "middle left"
-    },
-    {
-      "id": 19,
-      "role": "icon",
-      "label": "",
-      "boxPct": [
-        11.1,
-        55.2,
-        14.3,
-        56.4
-      ],
-      "centerPct": [
-        12.7,
-        55.8
-      ],
-      "where": "middle left"
-    },
-    {
-      "id": 20,
-      "role": "icon",
-      "label": "",
-      "boxPct": [
-        15.8,
-        55.5,
-        24.9,
-        57.5
-      ],
-      "centerPct": [
-        20.4,
-        56.5
-      ],
-      "where": "middle left"
-    },
-    {
-      "id": 21,
-      "role": "icon",
-      "label": "near \"9,951\"",
-      "boxPct": [
-        43.6,
-        46.3,
-        49.0,
-        48.1
-      ],
-      "centerPct": [
-        46.3,
-        47.2
-      ],
-      "where": "middle center"
-    },
-    {
-      "id": 22,
-      "role": "icon",
-      "label": "",
-      "boxPct": [
-        32.5,
-        58.4,
-        35.4,
-        59.9
-      ],
-      "centerPct": [
-        33.9,
-        59.2
-      ],
-      "where": "middle center"
-    },
-    {
-      "id": 23,
-      "role": "icon",
-      "label": "near \"678\"",
-      "boxPct": [
-        35.6,
-        57.6,
-        48.2,
-        63.3
-      ],
-      "centerPct": [
-        41.9,
-        60.4
-      ],
-      "where": "lower center"
-    },
-    {
-      "id": 24,
-      "role": "icon",
-      "label": "near \"678\"",
-      "boxPct": [
-        45.6,
-        62.4,
-        48.4,
-        63.7
-      ],
-      "centerPct": [
-        47.0,
-        63.1
-      ],
-      "where": "lower center"
-    },
-    {
-      "id": 25,
-      "role": "icon",
       "label": "like",
       "boxPct": [
-        87.6,
-        40.4,
-        96.3,
-        45.0
+        88.3,
+        41.2,
+        95.7,
+        44.2
       ],
       "centerPct": [
         92.0,
@@ -787,7 +677,7 @@
       "where": "upper right"
     },
     {
-      "id": 26,
+      "id": 16,
       "role": "text",
       "label": "9,951",
       "boxPct": [
@@ -803,23 +693,199 @@
       "where": "middle right"
     },
     {
-      "id": 27,
+      "id": 17,
       "role": "icon",
-      "label": "comment",
+      "label": "near \"9,951\"",
       "boxPct": [
-        87.6,
-        48.8,
-        96.3,
-        53.5
+        43.6,
+        46.3,
+        49.0,
+        48.1
       ],
       "centerPct": [
-        92.0,
-        51.1
+        46.3,
+        47.2
+      ],
+      "where": "middle center"
+    },
+    {
+      "id": 18,
+      "role": "icon",
+      "label": "near \"9,951\"",
+      "boxPct": [
+        75.3,
+        46.2,
+        82.2,
+        48.6
+      ],
+      "centerPct": [
+        78.7,
+        47.4
       ],
       "where": "middle right"
     },
     {
+      "id": 19,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        0.0,
+        50.1,
+        4.3,
+        54.2
+      ],
+      "centerPct": [
+        2.2,
+        52.2
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 20,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        0.0,
+        49.7,
+        3.7,
+        52.7
+      ],
+      "centerPct": [
+        1.8,
+        51.2
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 21,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        8.7,
+        53.8,
+        15.8,
+        55.9
+      ],
+      "centerPct": [
+        12.3,
+        54.8
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 22,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        13.2,
+        54.8,
+        21.3,
+        56.7
+      ],
+      "centerPct": [
+        17.2,
+        55.8
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 23,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        11.1,
+        55.2,
+        14.3,
+        56.4
+      ],
+      "centerPct": [
+        12.7,
+        55.8
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 24,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        15.8,
+        55.5,
+        24.9,
+        57.5
+      ],
+      "centerPct": [
+        20.4,
+        56.5
+      ],
+      "where": "middle left"
+    },
+    {
+      "id": 25,
+      "role": "icon",
+      "label": "",
+      "boxPct": [
+        32.5,
+        58.4,
+        35.4,
+        59.9
+      ],
+      "centerPct": [
+        33.9,
+        59.2
+      ],
+      "where": "middle center"
+    },
+    {
+      "id": 26,
+      "role": "icon",
+      "label": "near \"678\"",
+      "boxPct": [
+        35.6,
+        57.6,
+        48.2,
+        63.3
+      ],
+      "centerPct": [
+        41.9,
+        60.4
+      ],
+      "where": "lower center"
+    },
+    {
+      "id": 27,
+      "role": "icon",
+      "label": "near \"678\"",
+      "boxPct": [
+        45.6,
+        62.4,
+        48.4,
+        63.7
+      ],
+      "centerPct": [
+        47.0,
+        63.1
+      ],
+      "where": "lower center"
+    },
+    {
       "id": 28,
+      "role": "icon",
+      "label": "comment",
+      "boxPct": [
+        88.5,
+        49.5,
+        95.9,
+        53.0
+      ],
+      "centerPct": [
+        92.2,
+        51.2
+      ],
+      "where": "middle right"
+    },
+    {
+      "id": 29,
       "role": "icon",
       "label": "",
       "boxPct": [
@@ -835,52 +901,36 @@
       "where": "middle right"
     },
     {
-      "id": 29,
+      "id": 30,
       "role": "icon",
       "label": "repost",
       "boxPct": [
-        87.9,
-        57.6,
-        96.5,
-        62.4
+        88.9,
+        58.2,
+        95.7,
+        61.6
       ],
       "centerPct": [
-        92.2,
-        60.0
+        92.3,
+        59.9
       ],
       "where": "middle right"
     },
     {
-      "id": 30,
+      "id": 31,
       "role": "text",
       "label": "678",
       "boxPct": [
         89.6,
         63.1,
-        94.1,
+        93.9,
         64.5
       ],
       "centerPct": [
-        91.9,
+        91.8,
         63.8
       ],
       "where": "lower right"
-    },
-    {
-      "id": 31,
-      "role": "icon",
-      "label": "near \"9,951\"",
-      "boxPct": [
-        75.3,
-        46.2,
-        82.2,
-        48.6
-      ],
-      "centerPct": [
-        78.7,
-        47.4
-      ],
-      "where": "middle right"
     },
     {
       "id": 32,
@@ -903,10 +953,10 @@
       "role": "icon",
       "label": "share",
       "boxPct": [
-        87.9,
-        66.4,
-        96.5,
-        71.0
+        88.7,
+        67.2,
+        95.7,
+        70.1
       ],
       "centerPct": [
         92.2,
@@ -920,12 +970,12 @@
       "label": "6A",
       "boxPct": [
         94.6,
-        71.1,
-        99.6,
-        72.8
+        71.2,
+        99.3,
+        72.7
       ],
       "centerPct": [
-        97.1,
+        97.0,
         72.0
       ],
       "where": "lower right"
@@ -935,19 +985,35 @@
       "role": "icon",
       "label": "save",
       "boxPct": [
-        87.6,
-        74.9,
-        96.5,
-        79.7
+        88.9,
+        76.0,
+        95.2,
+        79.1
       ],
       "centerPct": [
         92.1,
-        77.3
+        77.5
       ],
       "where": "lower right"
     },
     {
       "id": 36,
+      "role": "icon",
+      "label": "avatar",
+      "boxPct": [
+        3.5,
+        78.7,
+        15.0,
+        84.2
+      ],
+      "centerPct": [
+        9.2,
+        81.5
+      ],
+      "where": "lower left"
+    },
+    {
+      "id": 37,
       "role": "text",
       "label": "erikajimamcelhaney",
       "boxPct": [
@@ -963,7 +1029,7 @@
       "where": "lower center"
     },
     {
-      "id": 37,
+      "id": 38,
       "role": "icon",
       "label": "near \"erikajimamcelhaney\"",
       "boxPct": [
@@ -979,7 +1045,7 @@
       "where": "lower right"
     },
     {
-      "id": 38,
+      "id": 39,
       "role": "icon",
       "label": "",
       "boxPct": [
@@ -995,7 +1061,7 @@
       "where": "lower right"
     },
     {
-      "id": 39,
+      "id": 40,
       "role": "text",
       "label": "gentfe",
       "boxPct": [
@@ -1011,7 +1077,7 @@
       "where": "bottom left"
     },
     {
-      "id": 40,
+      "id": 41,
       "role": "text",
       "label": "remnd",
       "boxPct": [
@@ -1027,7 +1093,7 @@
       "where": "bottom left"
     },
     {
-      "id": 41,
+      "id": 42,
       "role": "icon",
       "label": "near \"remnd\"",
       "boxPct": [
@@ -1043,23 +1109,23 @@
       "where": "bottom right"
     },
     {
-      "id": 42,
+      "id": 43,
       "role": "icon",
-      "label": "reels_tab",
+      "label": "home_tab",
       "boxPct": [
-        24.7,
-        90.4,
-        34.5,
-        95.5
+        6.1,
+        91.5,
+        12.8,
+        94.6
       ],
       "centerPct": [
-        29.6,
-        93.0
+        9.4,
+        93.1
       ],
       "where": "bottom left"
     },
     {
-      "id": 43,
+      "id": 44,
       "role": "text",
       "label": "D",
       "boxPct": [
@@ -1075,55 +1141,71 @@
       "where": "bottom left"
     },
     {
-      "id": 44,
-      "role": "icon",
-      "label": "near \"D\"",
-      "boxPct": [
-        46.6,
-        91.5,
-        53.4,
-        94.4
-      ],
-      "centerPct": [
-        50.0,
-        93.0
-      ],
-      "where": "bottom center"
-    },
-    {
       "id": 45,
       "role": "icon",
-      "label": "near \"D\"",
+      "label": "reels_tab",
       "boxPct": [
-        47.9,
-        92.1,
-        52.1,
-        93.8
+        26.5,
+        91.5,
+        32.8,
+        94.5
       ],
       "centerPct": [
-        50.0,
+        29.6,
         93.0
       ],
-      "where": "bottom center"
+      "where": "bottom left"
     },
     {
       "id": 46,
-      "role": "icon",
-      "label": "search",
+      "role": "text",
+      "label": "0",
       "boxPct": [
-        65.5,
-        90.5,
-        74.2,
-        95.2
+        46.6,
+        91.4,
+        53.1,
+        94.3
       ],
       "centerPct": [
-        69.8,
+        49.9,
         92.9
+      ],
+      "where": "bottom center"
+    },
+    {
+      "id": 47,
+      "role": "icon",
+      "label": "messages_tab",
+      "boxPct": [
+        46.6,
+        91.6,
+        52.9,
+        94.3
+      ],
+      "centerPct": [
+        49.8,
+        93.0
+      ],
+      "where": "bottom center"
+    },
+    {
+      "id": 48,
+      "role": "icon",
+      "label": "search_tab",
+      "boxPct": [
+        66.8,
+        91.5,
+        73.3,
+        94.4
+      ],
+      "centerPct": [
+        70.1,
+        93.0
       ],
       "where": "bottom right"
     },
     {
-      "id": 47,
+      "id": 49,
       "role": "text",
       "label": "Q",
       "boxPct": [
@@ -1139,36 +1221,20 @@
       "where": "bottom right"
     },
     {
-      "id": 48,
+      "id": 50,
       "role": "icon",
       "label": "profile_tab",
       "boxPct": [
-        85.2,
-        90.4,
-        95.0,
-        95.4
+        86.8,
+        91.3,
+        93.5,
+        94.4
       ],
       "centerPct": [
         90.1,
         92.9
       ],
       "where": "bottom right"
-    },
-    {
-      "id": 49,
-      "role": "icon",
-      "label": "home_tab",
-      "boxPct": [
-        4.6,
-        90.5,
-        14.1,
-        95.6
-      ],
-      "centerPct": [
-        9.3,
-        93.1
-      ],
-      "where": "bottom left"
     }
   ]
 }

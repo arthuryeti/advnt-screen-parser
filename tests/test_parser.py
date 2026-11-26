@@ -144,9 +144,11 @@ def test_icon_detector_local_weights() -> None:
         pytest.skip("Set ADVNT_ICON_MODEL_PATH to run ONNX integration test")
     det = IconDetector(model_path=model_path, auto_download=False)
     assert det.available
-    assert len(det.names) == 47
+    assert len(det.names) == 99
+    assert det.imgsz == (800, 416)
     example = Path(__file__).resolve().parents[1] / "assets" / "examples" / "instagram_feed.jpg"
     if example.is_file():
         res = det.detect_file(example)
         labels = {d["label"] for d in res}
-        assert {"ig_like", "ig_comment", "ig_share", "ig_home_tab"}.issubset(labels)
+        assert {"ig_comment", "ig_share", "ig_home_tab", "ig_profile_tab"}.issubset(labels)
+        assert labels & {"ig_like", "ig_liked"}

@@ -1,4 +1,4 @@
-"""Advnt Screen Parser (v3) — CPU-fast iOS UI icon detector + RapidOCR + UI-tree builder."""
+"""Advnt Screen Parser (v4) — CPU-fast iOS UI icon detector + RapidOCR + UI-tree builder."""
 
 from __future__ import annotations
 
@@ -19,4 +19,4 @@ __all__ = [
     "download_weights",
     "render_overlay",
 ]
-__version__ = "3.0.0"
+__version__ = "4.0.0"

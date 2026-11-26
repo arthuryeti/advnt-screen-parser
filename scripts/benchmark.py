@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproducible CPU latency benchmark for Advnt Screen Parser (v3)."""
+"""Reproducible CPU latency benchmark for Advnt Screen Parser (v4)."""
 
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ def main() -> None:
         print(f"  threads={t}: median={med:.1f} ms, p95={p95:.1f} ms, min={times[0]:.1f} ms")
 
     if not args.skip_ocr:
-        print("\n=== Full ScreenParser (RapidOCR PP-OCRv6-tiny + v3 Icons + UI Tree, 2 threads) ===")
+        print("\n=== Full ScreenParser (RapidOCR PP-OCRv6-tiny + v4 Icons + UI Tree, 2 threads) ===")
         parser = ScreenParser(icon_model_path=args.model, threads=2, enable_ocr=True)
         parser.warm_up()
         for name, im in images:

@@ -33,6 +33,10 @@ class _N:
 _PLATFORM_PREFIXES = ("ig_", "tt_", "x_", "yt_", "ios_")
 _CANONICAL_OVERRIDES = {
     "x_media": "media_upload",
+    "ios_app_tiktok": "app_result:tiktok",
+    "ios_app_instagram": "app_result:instagram",
+    "ios_app_x": "app_result:x",
+    "ios_app_youtube": "app_result:youtube",
 }
 # Text-labeled share-sheet actions (like "Copy Link") are already anchored precisely by RapidOCR;
 # circular share-sheet icon detections can collide with neighboring actions across platforms.
@@ -114,7 +118,10 @@ def build(
                 learned_icon_boxes.append(box)
                 icon_labels_seen.add(label)
 
-    has_feed_rail = {"like", "comment", "share"}.issubset(icon_labels_seen)
+    has_feed_rail = bool({"like", "liked"} & icon_labels_seen) and {
+        "comment",
+        "share",
+    }.issubset(icon_labels_seen)
     grid_tiles = _detect_grid_tiles(work, has_feed_rail=has_feed_rail)
     for gbox in grid_tiles:
         tile_label = _tag_post_tile(gbox, words, text_boxes)

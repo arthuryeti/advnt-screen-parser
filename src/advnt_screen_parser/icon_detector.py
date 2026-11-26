@@ -35,19 +35,37 @@ def download_weights(
     return model_path, meta_path
 
 
+def _parse_imgsz(
+    value: Any, default: tuple[int, int] = (800, 416)
+) -> tuple[int, int]:
+    if isinstance(value, int) and value > 0:
+        return (value, value)
+    if (
+        isinstance(value, (list, tuple))
+        and len(value) == 2
+        and isinstance(value[0], int)
+        and isinstance(value[1], int)
+        and value[0] > 0
+        and value[1] > 0
+    ):
+        return (int(value[0]), int(value[1]))
+    return default
+
+
 def _letterbox(
-    image: np.ndarray, size: int
+    image: np.ndarray, size: int | tuple[int, int]
 ) -> tuple[np.ndarray, float, tuple[float, float]]:
+    target_h, target_w = (size, size) if isinstance(size, int) else size
     h, w = image.shape[:2]
-    scale = min(size / w, size / h)
+    scale = min(target_w / w, target_h / h)
     nw, nh = int(round(w * scale)), int(round(h * scale))
     resized = (
         cv2.resize(image, (nw, nh), interpolation=cv2.INTER_LINEAR)
         if (nw, nh) != (w, h)
         else image
     )
-    pad_w = (size - nw) / 2.0
-    pad_h = (size - nh) / 2.0
+    pad_w = (target_w - nw) / 2.0
+    pad_h = (target_h - nh) / 2.0
     top, bottom = int(round(pad_h - 0.1)), int(round(pad_h + 0.1))
     left, right = int(round(pad_w - 0.1)), int(round(pad_w + 0.1))
     padded = cv2.copyMakeBorder(
@@ -57,10 +75,10 @@ def _letterbox(
 
 
 class IconDetector:
-    """CPU-fast ONNX YOLOv11s detector for 47 iOS & social-app UI icon classes.
+    """CPU-fast ONNX YOLOv11s detector for 99 iOS & social-app UI icon classes.
 
     Loads a local ONNX file if ``model_path`` or ``ADVNT_ICON_MODEL_PATH`` /
-    ``OCR_ICON_MODEL_PATH`` is provided; otherwise downloads and caches the v3
+    ``OCR_ICON_MODEL_PATH`` is provided; otherwise downloads and caches the v4
     weights automatically from Hugging Face Hub (``arthuryeti/advnt-screen-parser``).
     """
 
@@ -108,7 +126,7 @@ class IconDetector:
         self._lock = threading.Lock()
         self._session: ort.InferenceSession | None = None
         self._input_name: str = ""
-        self._imgsz: int = 640
+        self._imgsz: tuple[int, int] = (800, 416)
         self._names: dict[int, str] = {}
 
         if self._path and self._path.is_file():
@@ -123,7 +141,7 @@ class IconDetector:
         return dict(self._names)
 
     @property
-    def imgsz(self) -> int:
+    def imgsz(self) -> tuple[int, int]:
         return self._imgsz
 
     def _load(self, path: Path, meta_path: Path | None = None) -> None:
@@ -137,14 +155,20 @@ class IconDetector:
         inp = session.get_inputs()[0]
         self._input_name = inp.name
         shape = inp.shape
-        if len(shape) == 4 and isinstance(shape[2], int) and shape[2] > 0:
-            self._imgsz = int(shape[2])
+        if (
+            len(shape) == 4
+            and isinstance(shape[2], int)
+            and isinstance(shape[3], int)
+            and shape[2] > 0
+            and shape[3] > 0
+        ):
+            self._imgsz = (int(shape[2]), int(shape[3]))
 
         candidate_meta = meta_path if meta_path and meta_path.is_file() else path.with_suffix(".json")
         if candidate_meta.is_file():
             meta = json.loads(candidate_meta.read_text(encoding="utf-8"))
-            if isinstance(meta.get("imgsz"), int):
-                self._imgsz = meta["imgsz"]
+            if "imgsz" in meta:
+                self._imgsz = _parse_imgsz(meta["imgsz"], self._imgsz)
             raw_names = meta.get("names") or {}
             if isinstance(raw_names, dict):
                 self._names = {int(k): str(v) for k, v in raw_names.items()}
